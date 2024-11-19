@@ -1,30 +1,50 @@
-import React, { useState } from "react";
+import './App.css';
+import { useState } from 'react';
 
 function App() {
-  const [product, updateProduct] = useState({
-    pname: "Poco M3",
-    price: 15000,
-  });
+  const [counter, setCounter] = useState(0); // Correct state initialization
+  const stock = 12; // Max stock count
 
   return (
-    <>
-      <h1>Product: {product.pname}</h1>
-      <p>Price: {product.price}</p>
-      <h1>Product: {JSON.stringify(product)}</h1>
+    <div className="Wrapper">
+      <h1>CounterApp</h1>
+      {/* Input to change background color */}
+      <input
+        type="color"
+        onChange={(e) => {
+          document.body.style.background = e.target.value;
+        }}
+      />
 
-      <input id="pname" placeholder="Enter new price" />
+      {/* Button to decrement counter */}
       <button
+        className="minus"
+        disabled={counter === 0}
         onClick={() => {
-          let mprice = document.getElementById("pname").value;
-          updateProduct({
-            ...product,
-            price: mprice,
-          });
+          if (counter > 0) {
+            setCounter(counter - 1);
+          }
         }}
       >
-        Update Price
+        -
       </button>
-    </>
+
+      {/* Dynamically displaying the counter value */}
+      <p className="counter">{counter}</p>
+
+      {/* Button to increment counter */}
+      <button
+        className="plus"
+        disabled={counter === stock}
+        onClick={() => {
+          if (counter < stock) {
+            setCounter(counter + 1);
+          }
+        }}
+      >
+        +
+      </button>
+    </div>
   );
 }
 

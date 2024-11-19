@@ -1,8 +1,30 @@
-h1{
-  background-color: blue;
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter {
+  font-size: 20px;
+}
+
+.Wrapper button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 21px;
+  font-style: oblique;
+  border-radius: 5px;
+  cursor: pointer;
   color: white;
 }
 
-p{
-  color: green;
+button.minus {
+  background-color: blueviolet;
+}
+
+button.plus {
+  background-color: red;
 }
