@@ -1,0 +1,16 @@
+.list-group-item{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: honeydew;
+  color: crimson;
+}
+.text-center{
+  color:crimson;
+  font-style: italic;
+
+}
+.btn{
+  color: black;
+}

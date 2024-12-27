@@ -1,0 +1,105 @@
+
+body {
+    font-style: 'Arial';
+    margin: 0;
+    padding: 0;
+    background-color:cadetblue ;
+    color: black;
+  }
+  
+  .HomePage{
+
+    background-color: #e9f7ea;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0cap
+
+  }
+  
+  h1 {
+    color:rgb(220, 20, 27);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    color: brown;
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 5px 0;
+  }
+  
+  
+  button {
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color:black;
+    transform: scale(1.05);
+  }
+  .AboutOurStore{
+
+    background-color: #e9f7ea;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0cap
+
+  }
+  .ContactDetails{
+
+    background-color: #e9f7ea;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0cap
+
+  }
+  
+  /* Terms & Conditions specific styles */
+  .ConditionsApplied {
+    background-color: #e9f7ea;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0cap
+  }
+
+  .ServicesProvided{
+    background-color: #e9f7ea;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    max-width: 900px;
+    
+
+  }
+  
+  
+  
+  

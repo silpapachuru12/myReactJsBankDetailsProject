@@ -1,51 +1,18 @@
-import './App.css';
-import { useState } from 'react';
+function App(){
 
-function App() {
-  const [counter, setCounter] = useState(0); // Correct state initialization
-  const stock = 12; // Max stock count
+  return(
 
-  return (
-    <div className="Wrapper">
-      <h1>CounterApp</h1>
-      {/* Input to change background color */}
-      <input
-        type="color"
-        onChange={(e) => {
-          document.body.style.background = e.target.value;
-        }}
-      />
+          <div className="container mt-5 w-50">
+            <div className="input-group">
+            <input className="form-control"type="text"/>
+            <button className="btn btn-primary">Add</button>
+            <ul className="list-group">
+              <li className="list-group-item"> Todo 1</li>
+              <li className="list-group-item"> Todo 2</li>
+            </ul>
 
-      {/* Button to decrement counter */}
-      <button
-        className="minus"
-        disabled={counter === 0}
-        onClick={() => {
-          if (counter > 0) {
-            setCounter(counter - 1);
-          }
-        }}
-      >
-        -
-      </button>
-
-      {/* Dynamically displaying the counter value */}
-      <p className="counter">{counter}</p>
-
-      {/* Button to increment counter */}
-      <button
-        className="plus"
-        disabled={counter === stock}
-        onClick={() => {
-          if (counter < stock) {
-            setCounter(counter + 1);
-          }
-        }}
-      >
-        +
-      </button>
+          </div>
     </div>
-  );
+  )
 }
-
 export default App;
